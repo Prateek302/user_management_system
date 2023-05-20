@@ -1,0 +1,200 @@
+:root{
+	--second-bg-color:#0a0a0a;
+	--bg-color:#72787a;
+	--main-color:#ffff00;
+	--text-color:#faf5f5;
+
+	
+}
+
+body{
+	background-color: var(--bg-color);
+}
+
+
+
+/*index page css*/
+
+.outer{
+	max-height: auto%;
+	width:100%;
+
+}
+
+.main{
+	height:500px;
+	width: 500px;
+	margin:10px auto;
+	justify-content: center;
+	align-items: center;
+	background-color:var(--second-bg-color);
+}
+
+.heading{
+	color: var(--text-color);
+	font-size: 40px;
+	margin-bottom: 150px;
+}
+
+
+
+a{
+    display: grid;
+    height: 50px;
+    width: 160px;
+    background: linear-gradient(
+        #ffff00,
+        #333300
+    );
+
+    position: justify;
+    margin: 10px auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    place-items: center;
+    font-family: "Poppins",sans-serif;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 3px;
+    border-radius: 5px;
+}
+
+a:hover {
+  color: black;
+}
+
+
+
+/*add user page design*/
+
+
+.formDiv{
+	height:430px;
+	width: 100%;
+	max-width: 430px;
+	margin:50px auto;
+	background-color: var(--second-bg-color);
+    position: relative;
+    padding: 50px;
+    border-radius: 6px;
+    box-shadow: var(--main-color);
+}
+
+.formDiv form{
+  margin-top: 30px;
+}
+.formDiv form .input-box{
+  height: 52px;
+  margin: 18px 0;
+}
+form .input-box input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+  border: 1.5px solid var(--main-color);
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+
+form h3{
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.input-box.button input{
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  color:black;
+  background: var(--main-color);
+  cursor: pointer;
+}
+.input-box.button input:hover{
+  background: linear-gradient(
+        #ffff00,
+        #333300
+    );
+  color:white;
+}
+form .text h3{
+ color: #333;
+ width: 100%;
+ text-align: center;
+ color:white;
+}
+
+
+
+/*view page design*/
+.outerV{
+	height: auto;
+	width:100%;
+
+}
+
+.viewDiv{
+	height:auto;
+	width: 100%;
+	max-height: auto;
+	max-width: 1000px;
+	margin:50px auto;
+	background-color: var(--second-bg-color);
+    position: relative;
+    padding: 50px;
+    border-radius: 6px;
+    box-shadow: var(--main-color);
+}
+
+.table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px var(--bg-color) ;
+}
+
+.table thead tr {
+    background-color: var(--main-color);
+    color: var(--second-bg-color);
+    text-align: left;
+}
+
+.table th,
+.table td {
+    padding: 10px 10px;
+
+}
+
+.table tbody tr {
+    border-bottom: 1px solid red;
+    color:var(--text-color);
+
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+    color: var(--second-bg-color);
+}
+
+.table tbody tr:last-of-type {
+    border-bottom: 2px solid var(--main-color);
+
+}
+
+
+.table tbody tr.active-row {
+    font-weight: bold;
+    color: red;
+}
